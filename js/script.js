@@ -33,7 +33,7 @@ btnLogin.addEventListener("click",async () => {
     try {
         const response = await fetch("https://dummyjson.com/auth/login", {
             method: "POST",
-            headers: { "Content-Type": "apllication/json"},
+            headers: { "Content-Type": "application/json"},
             body: JSON.stringify({ username: username,password:password })
         });
 
@@ -79,7 +79,7 @@ btnGetData.addEventListener("click", async () => {
         let html = "<h3>Data Pengguna:</h3><ul>";
 
         for (const user of result.data) {
-            html += `<li>${user.first_name} ${user.lats_name}</li>`;
+            html += `<li>${user.first_name} ${user.last_name}</li>`;
         }
 
         html += "<ul>";
