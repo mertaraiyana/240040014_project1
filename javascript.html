@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktik JavaScript</title>
+    <style>
+        #colorBlock{
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+            margin-bottom: 20px;
+            transition: 0.3s ease;
+        }
+        button{
+            margin: 5px;
+            padding: 10px 15px;
+        }
+        .btn-blue{background-color: #3498db; color: white;}
+        .btn-green{background-color: #2ecc71; color: white;}
+        .btn-red{background-color: #e74c3c; color: white;}
+        .btn-api{background-color: #9b59b6; color: white;}
+    </style>
+</head>
+<body>
+    <h1>Praktik JavaScript</h1>
+    <h2>1. Deklarasi & Penggunaan Variabel</h2>
+    <p>Lihat hasil di <strong>Console</strong>.</p>
+    <h2>2. Event Handling & Manipulasi Elemen</h2>
+    <div id="colorBlock"></div>
+    <div>
+        <button class="btn-blue">Ubah ke Biru</button>
+        <button class="btn-green">Ubah ke Hijau</button>
+        <button class="btn-red">Reset Warna</button>
+    </div>
+    <h2>3. HTTP Request & Otentikasi</h2>
+    <div>
+        <input type="text" id="username" placeholder="Masukkan username">
+        <input type="password" id="password" placeholder="Masukkan password">
+        <button id="btnLogin" class="btn-api">Login</button>
+        <button id="brnGetData" class="btn-api">Ambil Data dari API</button>
+    </div>
+
+    <div id="output" style="margin-top: 20px;"></div>
+
+    <script>
+        //1. Deklarasi & Penggunaan Variabel
+        let nama = "Rai Yana";
+        const usia = 17;
+        var statusaktif = true;
+
+        console.log("Nama:", nama);
+        console.log("Usia:", usia);
+        console.log("Status Aktif:", statusaktif);
+    </script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

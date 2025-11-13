@@ -1,0 +1,29 @@
+        header{
+            background-color: red;
+            padding: 10px;
+        }
+        header > h1{
+            color: yellow;
+            font-size: 50px;
+            padding: 10px;
+            background-color: black;
+            margin: 15px;
+        }
+        header > div.tag > i{
+            font-size: 24px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: aqua;
+        }
+        header > div.tag{
+            padding-bottom: 20px;
+        }
+        i{
+            color: white;
+            font-size: 20px;
+        }
+        section#main-Content{
+            background-color: blue;
+        }
+        footer{
+            background-color: yellow;
+        }

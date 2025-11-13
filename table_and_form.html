@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table and Form</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Kembali</a>
+    </nav>
+    <h2>Table</h2>
+    <table border="1" cellpadding="20" cellspacing="0" width="50%">
+        <thead>
+            <tr>
+                <th>NO.</th>
+                <th>NAMA</th>
+                <th>ALAMAT</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Andi</td>
+                <td>Jawa</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Budi</td>
+                <td>Sulawesi</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rai</td>
+                <td>Bali</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>
+        Form Pendaftaran
+    </h2>
+    <form action="http://localhost/stikom-frontend-dev/table_and_form.html" method="post">
+        <label for="name">Nama</label>
+        <input type="text" name="name" id="name" placeholder="Masukkan nama"><br>
+        <label for="alamat">Alamat</label>
+        <input type="text" name="alamat" id="alamat" placeholder="Masukkan alamat"><br>
+        <label for="jeniskelamin">Jenis Kelamin</label><br>
+        <input type="radio" name="jeniskelamin" id="lakilaki"><label for="lakilaki">Laki - laki</label><br>
+        <input type="radio" name="jeniskelamin" id="perempuan"><label for="perempuan">Perempuan</label><br>
+        <label for="status">Status</label><br>
+        <input type="radio" name="status" id="lajang"><label for="lajang">Lajang</label><br>
+        <input type="radio" name="status" id="kawin"><label for="kawin">Kawin</label><br>
+        <label for="pekerjaan">Pekerjaan</label><br>
+        <select name="pekerjaan" id="pekerjaan">
+            <option value="1">Programmer Frontend</option>
+            <option value="2">Programmer Backend</option>
+        </select>
+    <input type="submit" value="Kirim">
+    </form>
+
+    <h2>
+        Form Pencarian
+    </h2>
+    <form action="http://localhost/stikom-frontend-dev/table_and_form.html" method="get">
+        <label>Keyword</label>
+        <input type="text" name="katakunci">
+        <button type="submit">Cari</button>
+    </form>
+</body>
+</html>
