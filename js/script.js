@@ -26,7 +26,7 @@ btnLogin.addEventListener("click",async () => {
     const password = document.getElementById("password").value;
 
     if (!username || !password) {
-        alert("Usernaem dan Password wajib diisi.");
+        alert("Username dan Password wajib diisi.");
         return;
     }
 
